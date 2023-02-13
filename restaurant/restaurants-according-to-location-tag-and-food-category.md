@@ -2,7 +2,7 @@
 description: 위치 태그와 음식 카테고리에따른 맛집 데이터를 제공하는 API입니다.
 ---
 
-# Restaurant According to Location Tag and Food Category
+# Restaurants According to Location Tag and Food Category
 
 ## 1. GET method
 
@@ -10,10 +10,23 @@ description: 위치 태그와 음식 카테고리에따른 맛집 데이터를 �
 
 ### 1. Request URL
 
-<pre><code><strong>/restaurants/{locationCategory}/{locationTag}&#x26;{foodCategory}
+<pre><code><strong>/restaurants/locationtag-foodcategory
 </strong></code></pre>
 
-### 2. Response Body
+### 2. Parameters
+
+request parameter : description
+
+* categoryName : 음식 카테고리 이름
+* tagName : 위치 태그 이름
+
+### 3. Request Example
+
+```
+/restaurants/locationtag-foodcategory?categoryName=korean&tagName=sinchon
+```
+
+### 4. Response Body
 
 key : description
 
